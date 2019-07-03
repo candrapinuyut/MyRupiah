@@ -3,18 +3,29 @@
    flex-wrap:wrap;
    position:relative;
    padding-bottom: 40px;
-}
+ }
 #searchbox h2{
     flex:1;
    flex-basis:100%;
-   font-size:2em;		
+   font-size:3em;		
    text-align:center;
 }
-
-.input-text{
-    flex:1;
-   padding:8px 18px;
+#searchbox h2 span{
+   font-weight: bold;
 }
+#searchbox p{
+   text-align: center;
+   color:#333;
+   margin-top: -2.5%;
+}
+.input-text{
+   flex:1;
+   padding:10px 10px;
+   font-size:1em;
+   color:#1289A7;
+   letter-spacing: 2px;
+   text-align: center;
+ }
 
 *:focus{
    outline:0 none;
@@ -35,7 +46,7 @@ button{
    color:#FFF;
 }
 .hijau{
-   background:#F79F1F;
+   background:#12CBC4;
 }
 .item-container {
    display:flex;
@@ -43,6 +54,7 @@ button{
    flex-basis:70%;
    margin-top:20px;
    flex-wrap:wrap;
+
    flex-direction:column;
 }
 .item-container .status{
@@ -80,7 +92,8 @@ button{
 }
 .item .mount{
    color:#ED4C67;
-   font-size:1.3em;
+   font-size:1em;
+   font-weight: bold;
 }
 .item .sisa{
     flex: 1;

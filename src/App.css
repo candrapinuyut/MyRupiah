@@ -7,7 +7,7 @@ body{
 	box-sizing:border-box;
 }
 h1,h2,h3,h4,h5{
-	color:#006266;
+	color:#ED4C67;
 }
 .container{
 	width:90%;
@@ -28,7 +28,7 @@ h1,h2,h3,h4,h5{
 	flex-wrap: wrap;
 }
 .content .row{
-	width:60%;
+	width:50%;
 }
  
 
