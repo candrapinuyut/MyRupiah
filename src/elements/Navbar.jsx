@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import style from './Navbar.css'
+import style from './css/Navbar.css'
 
 const Navbar = ()=>{
     
     return(
-        <nav>           
-            <div className="container">
-                <span id='title-web'>BalikinDuit</span>
-            </div>
-        </nav>
+		<nav>
+			<div className="container"> 
+				<div id="logo">TukarDuit</div>
+			</div>
+		</nav>
     )
      
 }

@@ -3,10 +3,7 @@ import Home from './pages/Home';
 import Header from './components/Header';
 
 import  './App.css';
-import  './elements/Grid.css';
-import  './elements/Input.css';
-import  './elements/Button.css';
-
+ 
 
 
 function App() {

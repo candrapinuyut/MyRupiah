@@ -1,0 +1,91 @@
+#searchbox{
+    display:flex;
+   flex-wrap:wrap;
+   position:relative;
+   padding-bottom: 40px;
+}
+#searchbox h2{
+    flex:1;
+   flex-basis:100%;
+   font-size:2em;		
+   text-align:center;
+}
+
+.input-text{
+    flex:1;
+   padding:8px 18px;
+}
+
+*:focus{
+   outline:0 none;
+   
+
+}
+
+input:hover,button:hover,{
+   -webkit-box-shadow: 3px 3px 5px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+   -moz-box-shadow:    3px 3px 5px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+   box-shadow:         2px 3px 5px 1px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+}
+button{
+   border:none;
+   cursor:pointer;
+   padding:10px 20px;
+   color:#FFF;
+}
+.hijau{
+   background:#F79F1F;
+}
+.item-container {
+   display:flex;
+   flex:1;
+   flex-basis:70%;
+   margin-top:20px;
+   flex-wrap:wrap;
+   flex-direction:column;
+}
+.item-container .status{
+   flex:1;	
+   padding:5px 0 10px 0;
+   
+}
+.item:hover .uang ,
+.item:hover .mount
+{
+
+   font-weight: bold;
+}
+.sukses{
+   color:green;
+}
+.error{
+   color:red;
+}
+
+.item{
+   flex-basis:10%;
+   flex:1;
+   background-color: #f8f9d2;
+   background-image: linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%);
+   padding:20px 20px;
+   display:flex;
+   justify-content:space-between;
+   margin-top:2px;
+   flex-wrap:wrap;
+}
+.item .uang{
+   color:#1289A7;
+   font-size:1.3em;
+}
+.item .mount{
+   color:#ED4C67;
+   font-size:1.3em;
+}
+.item .sisa{
+    flex: 1;
+    flex-basis: 100%;
+    font-size: 90%;
+    color: red;
+    margin-top:10px;
+}

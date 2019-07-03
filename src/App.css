@@ -1,64 +1,39 @@
-*{
-		box-sizing:border-box;
-
-}
 body{
-    background:#FFF;
-    margin:0;
-    padding:0;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	background:#FFF;
+	margin:0;
+	font-family:"arial";
+}
+*{
+	box-sizing:border-box;
+}
+h1,h2,h3,h4,h5{
+	color:#006266;
 }
 .container{
-    margin:0 auto;
-    width:95%;
-}
-
-#form-search{
-
-    margin:5% auto;
-
-
-}
-.title-app{
-    color: #333;
-    display: block;
-    width: 100%;
-    font-size: 200%;
-}
-.t-center{
-    text-align: center;
-}
-.input-area{
-	width:50%;
-	margin-left:auto;
-	margin-right:auto;
-}
-.mt-10{
-	margin-top:10px;
-}
-.input-area input{
-	display:inline-table;
 	width:90%;
-	border:1px solid #ccc;
-	padding:10px;
-	border-radius:8px 0	0 8px ;
+	margin:auto;
 }
-.input-area button{
-	border:1px solid #ccc;
-	width:10%;
-	padding:10px;
-	border-radius:0px 8px 8px 0px;
-}
-.box{
+.border-tes{
 	border:1px solid #CCCCCC;
-	padding:10px;
-	font-size:120%;
-
 }
 
+.content{
+ 	height:50vh;
+	display:flex;
+	align-content:center;
+}
+.content .container{
+	display:flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+.content .row{
+	width:60%;
+}
+ 
 
-@media screen and (max-width:720px){
-	.input-area{
-		width:90%;
+@media(max-width:720px){
+	.content .row{
+		width:100%;
 	}
 }
