@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SearchBox from '../components/Home/SerachBox';
+import SearchBox from "../components/Home/SerachBox";
 
 export class Home extends Component {
 	

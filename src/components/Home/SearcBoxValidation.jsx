@@ -22,6 +22,7 @@ const kelipatan=( kpk, limitAmount )=>{
 }
 const getMinimumNumberRupiah=(n)=>{
 
+
     const fractions=new Array(100000,50000,20000,10000,5000,2000,1000,500,100,50); //list of fractions 
     
     let i=0;
@@ -81,7 +82,11 @@ const filterSearch=( str )=>{
     
     
     let err=[];
-   
+   //alert(paeseInt(str));
+    if(  parseInt(str) < 50 ){
+        err.push('No Availables for list fraction.. ')
+        return err;  
+    }
     if( valid_input_all.test( str) ){
     
         if(
@@ -148,8 +153,9 @@ const filterSearch=( str )=>{
                     
                 }
 
-            }
             
+            }
+                      
 
 
 
@@ -158,7 +164,8 @@ const filterSearch=( str )=>{
     
     
     
-    }else err.push('Input value was bad format Rupiah..')
+    }  else err.push('Input value was bad format Rupiah  ')  
+    
 
     return err;
     

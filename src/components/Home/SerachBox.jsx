@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './css/SearchBox.css'
 import SearchBoxItems from './SearchBoxItems';
 import SearchBoxValidation from'./SearcBoxValidation';
 
@@ -71,8 +70,7 @@ export class SerachBox extends Component {
                         Simpe Application that given a number of rupiahs will 
                         calculate the minimum number of rupiahs needed to make that amount 
                     </p>
-
-                    <input  onInput={e=>this.updateInput(e.target.value)} className='input-text' 
+                     <input  onInput={e=>this.updateInput(e.target.value)} className='input-text' 
                      placeholder='Enter your Rupiahs here...' type="text" 
                      onKeyPress={event => {
                         if (event.key == 'Enter') {
@@ -80,7 +78,7 @@ export class SerachBox extends Component {
                         }
                       }} 
                      />
-                    <button onClick={()=>this.search()} className='hijau btn'>Cari</button>
+                    <button onClick={()=>this.search()} className='primary'>Cari</button>
 
                     <SearchBoxItems
                      errorData={errorData }

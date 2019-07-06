@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import style from './css/Navbar.css'
-
+ 
 const Navbar = ()=>{
     
     return(

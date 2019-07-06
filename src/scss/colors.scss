@@ -1,0 +1,21 @@
+
+$primaryBold:#1289A7;
+$textParagraph:#333;
+$primary:#12CBC4;
+$secondary:#ED4C67;
+$hijau:#009432;
+
+$suksesResultMsgColor:$hijau;
+$errorResultMsgColor:#EA2027;
+
+
+.primary{
+    background:$primary;
+ }
+ .sukses{
+    color:$suksesResultMsgColor;
+ }
+ .error{
+    color:$errorResultMsgColor;
+ }
+ 

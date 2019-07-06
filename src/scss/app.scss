@@ -1,0 +1,33 @@
+@import "./colors.scss";
+@import "./elements.scss";
+
+@import "./searchbox/searchbox.scss";
+@import "./navbar/nav.scss";
+
+
+.container{
+	width:90%;
+	margin:auto;
+}
+.border-tes{
+	border:1px solid #CCCCCC;
+}
+.content{
+ 	height:50vh;
+	display:flex;
+	align-content:center;
+}
+.content .container{
+	display:flex;
+	justify-content:center;
+	flex-wrap: wrap;
+}
+.content .row{
+	width:50%;
+}
+
+@media(max-width:720px){
+	.content .row{
+		width:100%;
+	}
+}

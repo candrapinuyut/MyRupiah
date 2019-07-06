@@ -1,0 +1,24 @@
+*:focus{
+    outline:0 none;
+ }
+ 
+ input:hover,button:hover,{
+    box-shadow: 2px 3px 5px 1px #ccc;  
+ }
+ button{
+    border:none;
+    cursor:pointer;
+    padding:10px 20px;
+    color:#FFF;
+ }
+ body{
+	background:#FFF;
+	margin:0;
+	font-family:"arial";
+}
+*{
+	box-sizing:border-box;
+}
+h1,h2,h3,h4,h5{
+	color:$secondary;
+}

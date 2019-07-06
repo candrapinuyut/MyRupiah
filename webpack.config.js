@@ -6,17 +6,38 @@ module.exports = {
     filename: "bundle.js"
   },
   module: {
-    loaders: [
+    rules: [
       { 
-        test: /\.js$/, 
+        test: /\.js?$/, 
         loader: "babel-loader", 
-        exclude: /node_modules/ 
+        exclude: /node_modules/,
+		resolve: {
+			extensions: [".js", ".jsx"]
+		},
+		include: path.resolve("src")
       },
       { 
-        test: /\.jsx$/, 
+        test: /\.jsx?$/, 
         loader: "babel-loader", 
-        exclude: /node_modules/ 
-      }
+        exclude: /node_modules/,
+		resolve: {
+			extensions: [".js", ".jsx"]
+		},		
+		include: path.resolve("src") 
+      },
+      { 
+        test: /\.css$/, 
+        loader: ['style-loader','css-loader'], 
+        exclude: /node_modules/,
+		include: path.resolve("src")		
+       },
+	   {
+		test:/\.scss$/,
+		loader:['style-loader','css-loader','sass-loader'],
+		exclude:/nodde_modules/,
+		include: path.resolve("src")
+	   }
     ]
-  }
+  },
+  
 }
